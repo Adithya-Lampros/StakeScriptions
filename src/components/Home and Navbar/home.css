@@ -1,0 +1,125 @@
+.home {
+  overflow: hidden;
+  min-height: 220vh;
+}
+.home-top {
+  margin-top: 20vh;
+}
+.home-logo-main {
+  display: flex;
+}
+.home-logo {
+  color: aliceblue;
+  font-size: 40px;
+  font-family: "Noir_medium";
+}
+.home-content {
+  color: #a6e24b;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  font-family: "Noir_regular";
+}
+.home-line1 {
+  height: 40vh;
+  width: 40vw;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 5;
+}
+.home-content-main {
+  margin-top: 10vh;
+  margin-left: 20vw;
+  width: 25%;
+}
+.home-top-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 70vh;
+}
+.home-button-div {
+  display: flex;
+  flex-direction: column;
+}
+.home-button {
+  position: absolute;
+  height: 8vh;
+  width: 8vw;
+  z-index: 2;
+}
+.btn-text1 {
+  position: absolute;
+  z-index: 5;
+  margin-left: 2vw;
+  margin-top: 1vh;
+  font-family: "Noir_regular";
+}
+.btn-text2 {
+  color: #a6e24b;
+  margin-left: 9vw;
+  margin-top: -2vh;
+  font-family: "Noir_regular";
+}
+.btn-arrow {
+  z-index: 5;
+  position: absolute;
+  height: 2vh;
+  width: 2vw;
+  margin-left: 6vw;
+  margin-top: 0.5vh;
+}
+.home-line2 {
+  height: 40vh;
+  width: 40vw;
+  position: absolute;
+}
+
+.home-bottom {
+  margin-top: 20vh;
+}
+
+.home-btm-box1 {
+  position: absolute;
+  z-index: 2;
+}
+
+.home-btm-box2 {
+  height: 70vh;
+  width: 70vw;
+  z-index: 5;
+  position: relative;
+  margin-top: 30vh;
+  margin-left: -10vw;
+}
+.home-line3 {
+  height: 40vh;
+  width: 40vw;
+  margin-left: 76vw;
+  margin-top: -20vh;
+}
+.home-btm-imgs-main {
+  margin-left: 35vw;
+  margin-top: -75vh;
+  z-index: 10;
+  position: absolute;
+}
+.home-btm-imgs-sub {
+  display: flex;
+  flex-direction: row;
+}
+.home-btm-img {
+  height: 40vh;
+  width: 30vw;
+}
+.home-btm-text {
+  width: 20vw;
+  font-size: xx-large;
+  font-family: "Noir_medium";
+}
+.home-btm-text {
+  margin-left: 15vw;
+  margin-top: -60vh;
+  z-index: 10;
+  position: absolute;
+}

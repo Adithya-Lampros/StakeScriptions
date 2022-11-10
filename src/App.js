@@ -1,25 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { createContext } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import NavBar from "./components/Home and Navbar/navbar";
+import Home from "./components/Home and Navbar/home";
+import Profile from "./components/Signup and Profile/profile";
+import SignUp from "./components/Signup and Profile/signup";
+import Subscription from "./components/All Subscription/allsubscription";
+import { WagmiConfig, createClient } from "wagmi";
+import { getDefaultProvider } from "ethers";
+import "./App.css";
 
-function App() {
+const client = createClient({
+  autoConnect: true,
+  provider: getDefaultProvider(),
+});
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <>
+        <WagmiConfig client={client}>
+          <Router>
+            <NavBar />
+            <div className="pages">
+              <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/profile" element={<Profile />} />
+                <Route path="/signup" element={<SignUp />} />
+                <Route path="/subscription" element={<Subscription />} />
+              </Routes>
+            </div>
+          </Router>
+        </WagmiConfig>
+      </>
+      {/* <Footer /> */}
     </div>
   );
-}
+};
 
 export default App;
