@@ -122,7 +122,26 @@
   position: absolute;
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
+  .home {
+    min-height: 280vh;
+  }
+  .home-btm-text {
+    font-size: large;
+    margin-left: 19vw;
+    width: 15%;
+  }
+  .home-btm-box1 {
+    height: 150vh;
+    width: 100vw;
+    margin-left: -20px;
+  }
+  .home-btm-imgs-main {
+    margin-top: -65vh;
+    z-index: 10;
+    position: absolute;
+    margin-left: 35vw;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {

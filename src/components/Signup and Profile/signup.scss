@@ -62,7 +62,16 @@
   font-family: "Noir_regular";
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
+  .sign-main {
+    height: 150vh;
+  }
+  .sign-sub {
+    width: 40vw;
+    height: 90vh;
+    margin-left: 30%;
+    margin-top: 30vh;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {

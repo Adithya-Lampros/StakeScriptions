@@ -60,7 +60,20 @@
   font-weight: 600;
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
+  .popup-box {
+    height: 100vh;
+  }
+  .box {
+    width: 95vw;
+    height: 100vh;
+    margin-left: 30px;
+    margin-top: 20vh;
+  }
+  .close-icon {
+    right: calc(10% - 10px);
+    top: calc(100vh - 90vh - 33px);
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {

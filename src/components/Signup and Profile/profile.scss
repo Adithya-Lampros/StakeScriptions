@@ -93,7 +93,18 @@
   font-family: "Noir_regular";
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
+  .profile-main {
+    height: 150vh;
+  }
+  .profile-sub {
+    height: 100vh;
+  }
+  .profile-btn {
+    font-size: medium;
+    height: 10vh;
+    width: 20vw;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {

@@ -197,6 +197,9 @@ button.reset-btn:hover {
 }
 
 @media only screen and (min-width: 1024px) {
+  .modalBackground {
+    height: 150vh;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {

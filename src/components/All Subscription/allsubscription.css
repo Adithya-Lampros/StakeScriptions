@@ -53,7 +53,13 @@
   width: 10vw;
 }
 
-@media only screen and (min-width: 1024px) {
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .subs-main {
+    height: 150vh;
+  }
+  .allsub-subitem {
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
