@@ -123,19 +123,10 @@ const Navbar = () => {
             <li>
               <span
                 onClick={() => {
-                  navigate("/player");
+                  navigate("/signup");
                 }}
               >
-                Player
-              </span>
-            </li>
-            <li>
-              <span
-                onClick={() => {
-                  navigate("/explore");
-                }}
-              >
-                Explore
+                Sign In
               </span>
             </li>
             {connected ? (
@@ -143,10 +134,10 @@ const Navbar = () => {
                 <li>
                   <span
                     onClick={() => {
-                      navigate("/streaming");
+                      navigate("/subscription");
                     }}
                   >
-                    Stream
+                    Explore
                   </span>
                 </li>
                 <li>
@@ -158,24 +149,28 @@ const Navbar = () => {
                     Profile
                   </span>
                 </li>
+                <li>
+                  <button
+                    className="nav-button"
+                    onClick={() => {
+                      disconnect();
+                    }}
+                  >
+                    Disconnect
+                  </button>
+                </li>
+              </>
+            ) : (
+              <li>
                 <button
                   className="nav-button"
                   onClick={() => {
-                    disconnect();
+                    connectWallet();
                   }}
                 >
-                  Disconnect
+                  Connect
                 </button>
-              </>
-            ) : (
-              <button
-                className="nav-button"
-                onClick={() => {
-                  connectWallet();
-                }}
-              >
-                Connect
-              </button>
+              </li>
             )}
           </ul>
         </div>

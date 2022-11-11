@@ -86,10 +86,10 @@ const Home = () => {
           <div className="home-btm-imgs-main">
             <div className="home-btm-imgs-sub">
               <img className="home-btm-img" src={Hulu} />
-              <img className="home-btm-img" src={Spotify} />
+              <img className="home-btm-img" src={Netflix} />
             </div>
             <div className="home-btm-imgs-sub">
-              <img className="home-btm-img" src={Netflix} />
+              <img className="home-btm-img" src={Spotify} />
               <img className="home-btm-img" src={AppleTV} />
             </div>
           </div>

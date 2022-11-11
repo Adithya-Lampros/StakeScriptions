@@ -92,3 +92,53 @@
   cursor: pointer;
   font-family: "Noir_regular";
 }
+
+@media only screen and (min-width: 1024px) {
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .profile-btn {
+    font-size: medium;
+    height: 10vh;
+    width: 20vw;
+  }
+  .profile-main {
+    height: 150vh;
+  }
+  .profile-sub {
+    height: 90vh;
+  }
+}
+
+@media (max-width: 767px) {
+  .profile-main {
+    height: 150vh;
+  }
+
+  .profile-sub {
+    width: 95vw;
+    height: 95vh;
+    margin-left: 2vw;
+    margin-top: 20vh;
+  }
+  .profile-img {
+    height: 10vh;
+    width: 15vw;
+  }
+  .profile-content {
+    font-size: medium;
+  }
+  .profile-sub-header {
+    font-size: medium;
+  }
+  .profile-btn-img {
+    height: 18vh;
+    width: 18vw;
+    margin-left: 10px;
+  }
+  .profile-btn {
+    font-size: medium;
+    height: 10vh;
+    width: 20vw;
+  }
+}

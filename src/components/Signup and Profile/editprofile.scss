@@ -196,7 +196,22 @@ button.reset-btn:hover {
   font-family: "Noir_regular";
 }
 
-@media only screen and (max-width: 688px) {
+@media only screen and (min-width: 1024px) {
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .modalBackground {
+    height: 150vh;
+  }
+  .modalContainer {
+    width: auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .modalBackground {
+    height: 150vh;
+  }
   .modalContainer {
     width: auto;
   }

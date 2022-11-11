@@ -61,3 +61,45 @@
   cursor: pointer;
   font-family: "Noir_regular";
 }
+
+@media only screen and (min-width: 1024px) {
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .sign-main {
+    height: 150vh;
+  }
+  .sign-sub {
+    width: 50vw;
+    height: 90vh;
+    margin-left: 25%;
+    margin-top: 30vh;
+  }
+  .sign-header {
+    padding-top: 20px;
+  }
+  .sign-btn {
+    height: 7vh;
+    width: 15vw;
+  }
+}
+
+@media (max-width: 767px) {
+  .sign-main {
+    height: 130vh;
+  }
+  .sign-sub {
+    width: 75vw;
+    height: 80vh;
+    margin-left: 12vw;
+    margin-top: 20vh;
+  }
+  .sign-text-field {
+    height: 5vh;
+    width: 30vw;
+  }
+  .sign-btn {
+    height: 7vh;
+    width: 25vw;
+  }
+}

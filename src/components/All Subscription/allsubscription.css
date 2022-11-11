@@ -52,3 +52,38 @@
   height: 10vh;
   width: 10vw;
 }
+
+@media only screen and (min-width: 1024px) {
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .subs-main {
+    height: 160vh;
+  }
+  .subs-imgs1 {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 2fr));
+    margin-left: 20px;
+  }
+  .subs-imgs2 {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 2fr));
+  }
+  .allsub-subitem {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+}
+
+@media (max-width: 767px) {
+  .subs-main {
+    height: 160vh;
+  }
+  .subs-imgs1 {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 2fr));
+    margin-left: 20px;
+  }
+  .subs-imgs2 {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 2fr));
+  }
+  .allsub-subitem {
+    grid-template-columns: repeat(auto-fit, minmax(63px, 1fr));
+  }
+}
