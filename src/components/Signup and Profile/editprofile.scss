@@ -196,7 +196,7 @@ button.reset-btn:hover {
   font-family: "Noir_regular";
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
   .modalBackground {
     height: 150vh;
   }
