@@ -23,7 +23,7 @@ const Home = () => {
   const navigate = new useNavigate();
   const takeToPlayer = () => {
     setNewButton({ hidden: true });
-    setTimeout(navigate("/player"), 3000);
+    setTimeout(navigate("/signup"), 3000);
   };
   return (
     <>

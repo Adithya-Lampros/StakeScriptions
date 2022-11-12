@@ -42,6 +42,7 @@ const SignUp = () => {
           ></input>
         </div>
         <button className="sign-btn">Submit</button>
+        <button className="sign-btn">Upload</button>
       </div>
     </div>
   );
